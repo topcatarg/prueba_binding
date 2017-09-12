@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:ejemplo_binding"
         mc:Ignorable="d"
         Title="ventanadatos" Height="300" Width="300">
-    <Grid>
-        
+    <Grid x:Name="GrillaDatos">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="148,101,0,0" TextWrapping="Wrap" Text="{Binding nombre}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="148,150,0,0" TextWrapping="Wrap" Text="{Binding edad}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="148,207,0,0" TextWrapping="Wrap" Text="{Binding altura}" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Nombre" HorizontalAlignment="Left" Margin="40,101,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Edad" HorizontalAlignment="Left" Margin="40,150,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Altura" HorizontalAlignment="Left" Margin="40,207,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

@@ -10,13 +10,14 @@
         <Grid.DataContext>
             <local:DatosPuros/>
         </Grid.DataContext>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="86,87,0,0" VerticalAlignment="Top">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="86,87,0,0" VerticalAlignment="Top" SelectionMode="Single" IsReadOnly="True" SelectionChanged="dataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding nombre}" Header="Nombre"/>
                 <DataGridTextColumn Binding="{Binding edad}" Header="Edad" />
                 <DataGridTextColumn Binding="{Binding altura}" Header="Altura" />
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="button" Content="Abrir otra pantalla" HorizontalAlignment="Left" Margin="358,55,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
 
     </Grid>
 </Window>

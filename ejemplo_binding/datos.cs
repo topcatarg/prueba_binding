@@ -89,7 +89,7 @@ namespace ejemplo_binding
             }
         }
 
-        public int _altura;
+        private int _altura;
 
         public int altura
         {

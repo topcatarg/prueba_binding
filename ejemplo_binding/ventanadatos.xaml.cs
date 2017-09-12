@@ -19,9 +19,17 @@ namespace ejemplo_binding
     /// </summary>
     public partial class ventanadatos : Window
     {
+
+        DatosPuros datos;
+
         public ventanadatos()
         {
             InitializeComponent();
+        }
+
+        public void LlenarDatos(DatosPuros dp)
+        {
+            GrillaDatos.DataContext = dp;
         }
     }
 }

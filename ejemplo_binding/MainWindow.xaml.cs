@@ -44,5 +44,17 @@ namespace ejemplo_binding
             Personas.ColeccionDatos.Add(dp);
             dataGrid.ItemsSource = Personas.ColeccionDatos;
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            ventanadatos vd = new ventanadatos();
+            vd.LlenarDatos((DatosPuros) dataGrid.SelectedItem);
+            vd.ShowDialog();
+        }
+
+        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //MessageBox.Show(dataGrid.SelectedItem.ToString());
+        }
     }
 }
