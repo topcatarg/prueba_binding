@@ -10,7 +10,7 @@
         <Grid.DataContext>
             <local:DatosPuros/>
         </Grid.DataContext>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="86,87,0,0" VerticalAlignment="Top" SelectionMode="Single" IsReadOnly="True" SelectionChanged="dataGrid_SelectionChanged">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="86,87,0,0" VerticalAlignment="Top" SelectionMode="Single" IsReadOnly="True" SelectionChanged="dataGrid_SelectionChanged" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding nombre}" Header="Nombre"/>
                 <DataGridTextColumn Binding="{Binding edad}" Header="Edad" />
